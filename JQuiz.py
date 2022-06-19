@@ -60,7 +60,8 @@ class Quiz():
                     print("Your answer meant", translator.translate(userAnswer, dest="japanese").text, "in Japanese.")
             else:
                 userAnswer = input("translate " + eWord + " into Japanese: ")
-                if str(translator.translate(userAnswer).text) == eWord or translator.translate(userAnswer).text == translator.translate(jWord).text or translator.translate(userAnswer).text == translator.translate(eWord).text:
+                if str(translator.translate(userAnswer).text) == eWord or translator.translate(userAnswer).text == \
+                translator.translate(jWord).text or translator.translate(userAnswer).text == translator.translate(eWord).text:
                     print("You are correct! The answer was " + jWord)
                     score+=1
                         

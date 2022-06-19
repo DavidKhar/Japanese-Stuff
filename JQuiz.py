@@ -13,7 +13,7 @@ class Quiz():
 
         for i in nums:
             eWord = contents[i]
-            jWord = translator.translate(contents[i], dest="japanese").text
+            jWord = translator.translate(contents[i], dest="japanese").text 
             jToE[jWord] = eWord
 
         for i in jToE:
